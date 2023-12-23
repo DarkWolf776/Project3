@@ -48,7 +48,7 @@ body {
         .enemy-ship2 {
             position: absolute;
             top: 70px;
-            left: 45%;
+            left: 35%;
             transform: translateX(-50%);
             width: 100px;
             height: 100px;
@@ -60,7 +60,7 @@ body {
         .enemy-ship3 {
             position: absolute;
             top: 70px;
-            left: 55%;
+            left: 65%;
             transform: translateX(-50%);
             width: 100px;
             height: 100px;
