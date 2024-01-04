@@ -3,79 +3,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-      body {
-          background-color: #87CEEB; /* Sky Blue */
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-      }
-      
-       #hill {
-          position: absolute;
-          bottom: 20px;
-          left: 0;
-          width: 100%;
-          height: 100px;
-          background-color: #32CD32;
-          border-radius: 50% / 20px;
-          z-index: -1;
-      }
+body {
+  background-color: #87CEEB; /* Sky Blue */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 
-      
-      #ground {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          height: 80px;
-          background-color: #8B4513;
-      }
+#hill {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #32CD32;
+  border-radius: 50% / 20px;
+  z-index: -1;
+}
 
-      .brick {
-          width: 50px;
-          height: 50px;
-          background-color: #B22222; /* Fire Brick */
-          display: inline-block;
-          margin: 90px;
-          position: relative;
-          border: 2px solid #000;
-      }
-      
-      .brick1 {
-          width: 50px;
-          height: 50px;
-          background-color: #B22222; 
-          display: inline-block;
-          margin: 80px;
-          position: relative;
-          display: inline-block;
-          margin: 90px;
-          border: 2px solid #000;
-          box-sizing: border-box;
-      }
-      
-      
-      #pipe {
-          position: absolute;
-          bottom: 20px;
-          left: 70%;
-          width: 180px;
-          height: 180px;
-          background-color: #228B22;
-          border-radius: 10px;
-          clip-path: polygon(10% 16%, 49% 16%, 49% 26%, 45% 26%, 46% 91%, 13% 91%, 13% 26%, 9% 26%);
-      }
+#ground {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #8B4513;
+}
+
+
+#pipe {
+  position: absolute;
+  bottom: 20px;
+  left: 60%;
+  width: 180px;
+  height: 180px;
+  background-color: #228B22;
+  border-radius: 10px;
+  clip-path: polygon(10% 16%, 49% 16%, 49% 26%, 45% 26%, 46% 91%, 13% 91%, 13% 26%, 9% 26%);
+}
+
+.container {
+  text-align: center;
+}
+
+.Header1  {
+  position: absolute;
+  top:2px;
+  left:5px;
+  width: 500px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  padding: 5px; /* Adjust the padding as needed */
+  margin: 5px; /* Adjust the margin as needed */
+}
+
+.Header2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 550px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  padding: 5px; /* Adjust the padding as needed */
+  margin: 5px; /* Adjust the margin as needed */
+}
+.Header3  {
+  position: absolute;
+  top:2px;
+  left:1350px;
+  width: 550px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  padding: 5px; /* Adjust the padding as needed */
+  margin: 5px; /* Adjust the margin as needed */
+}
+
+.Header4  {
+  position: absolute;
+  top:450px;
+  left:5px;
+  width: 550px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  padding: 5px; /* Adjust the padding as needed */
+  margin: 5px; /* Adjust the margin as needed */
+}
+
+.Header5  {
+  position: absolute;
+  top:385px;
+  left:1375px;
+  width: 525px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  padding: 5px; /* Adjust the padding as needed */
+  margin: 5px; /* Adjust the margin as needed */
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
   </style>
   </head>
 
   <body>
     <div class="container">
-      <div class="Header" style="text-align:center">
-        <img src="..\Charts\top_sales.jpg"style="padding: 30px">
-        <img src="..\Charts\top_sales_per_category.jpg"style="padding: 30px">
-        <img src="..\Charts\top_sales_per_platform.jpg"style="padding: 30px">
-        <img src="..\Charts\top_games_chart.jpg"style="padding: 30px">
-        <img src="..\Charts\bottom_games.jpg"style="padding: 30px">
+        <img class="Header1 " src="..\Charts\top_sales.jpg">  
+        <img class= "Header2" src="..\Charts\top_games_chart.jpg">
+        <img class= "Header3" src="..\Charts\top_sales_per_platform.jpg">
+        <img class= "Header4" src="..\Charts\top_sales_per_category.jpg">
+        <img class= "Header5"src="..\Charts\bottom_games.jpg">
           <div>
             <button type="button"style="width: 150px; height: 50px;" onclick="navigateToPage('Project 3.html')"   >Click me to go back</button>
           <div>
