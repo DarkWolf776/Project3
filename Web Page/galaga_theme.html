@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Video Game Data</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
     <link rel="stylesheet" href="video_game_data.css">
 </head>
 <body>
@@ -26,5 +27,35 @@
     <div id="stars"></div>
     <div id="stars2"></div>
     <div id="stars3"></div>
+
+    <script>
+      // Function to handle CSV file parsing
+      function handleCSVFile(data, vgsales) {
+          // Parse the CSV data
+          Papa.parse(data, {
+              header: true, // Treat the first row as headers
+              complete: function(results) {
+                  // Access the parsed data here
+                  console.log(`Data from ${vgsales}:`, results.data);
+              }
+          });
+      }
+  
+      // Function to fetch a CSV file
+      function fetchCSVFile(video_games) {
+          // Replace 'yourfile.csv' with the path to your CSV file
+          fetch(video_games)
+              .then(response => response.text())
+              .then(data => handleCSVFile(data, video_games))
+              .catch(error => console.error(`Error fetching CSV file ${video_games}:`, error));
+      }
+  
+      // Call the function to fetch the first CSV file
+      fetchCSVFile('/Users/joshuagibson/Desktop/ClassWork/VU-VIRT-DATA-PT-08-2023-U-LOLC/lesson/Project3/Data/vgsales.csv');
+  
+      // Call the function to fetch the second CSV file
+      fetchCSVFile('/Users/joshuagibson/Desktop/ClassWork/VU-VIRT-DATA-PT-08-2023-U-LOLC/lesson/Project3/Data/video_games.csv');
+  </script>
+  
 </body>
 </html>
