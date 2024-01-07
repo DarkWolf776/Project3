@@ -8,5 +8,5 @@
  
 Source Code:
 Global Video Game Sales Dataset: https://www.kaggle.com/datasets/thedevastator/global-video-game-sales
-Video Game Ratings Dataset: https://www.kaggle.com/datasets/maso0dahmed/video-games-data?resource=download
+Video Game Ratings Dataset: Masood Ahmed. (2023). <i>Video Games Data</i> [Data set]. Kaggle. https://doi.org/10.34740/KAGGLE/DSV/7052436
 Clip path code source for Galaga shapes: https://bennettfeely.com/clippy/
